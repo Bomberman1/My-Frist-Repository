@@ -4,9 +4,10 @@ $(document).ajaxStart(function () {
     NProgress.start();
 })
 //在ajaxStop()关闭
-$(document).ajaxStart(function () {
-    NProgress.done();
-})
+$(document).ajaxStop(function() {
+      // 当全部的ajax请求完成时, 关闭进度条
+      NProgress.done();
+  });
 
 $(function(){
     //点击分类管理展示div
@@ -28,12 +29,18 @@ $(function(){
             $('header').animate({
                 paddingLeft : 0+'px'
             },1000)
+            $('.main').animate({
+                paddingLeft : 0+'px'
+            },1000)
         }else{
             $('nav').animate({
                 left : 0+'px',
             },1000)
             $('header').animate({
                 paddingLeft : 180+'px'
+            },1000)
+            $('.main').animate({
+                paddingLeft : 195+'px'
             },1000)
         }
         

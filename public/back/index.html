@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.css">
-    <link rel="stylesheet" href="./lib/nprogress/nprogress.js">
+    <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
     <link rel="stylesheet" href="./css/comone.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -45,10 +45,10 @@
                         <p>
                             <i class="glyphicon glyphicon-list"></i>分类管理</p>
                     </a>
-                   <div class="son">
-                      <a href="#">一级分类</a>
-                      <a href="#">二级分类</a>
-                   </div>
+                    <div class="son">
+                        <a href="#">一级分类</a>
+                        <a href="#">二级分类</a>
+                    </div>
                 </li>
                 <li>
                     <a href="#">
@@ -60,30 +60,43 @@
         </div>
     </nav>
     <div class="main">
-
+        <ol class="breadcrumb">
+            <li>
+                <a href="#">管理系统</a>
+            </li>
+            <li class="active">首页</li>
+        </ol>
+        <!-- 图表 -->
+        <div class="tubiao">
+            <div class="pull-left zhuzhuangtu"></div>
+            <div class="pull-right binzhuangtu"></div>
+        </div>
     </div>
-<!-- 遮盖层 -->
+    <!-- 遮盖层 -->
     <!-- Button trigger modal -->
 
-      
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">温馨提示</h4>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">温馨提示</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <i class="glyphicon glyphicon-info-sign"></i>您确定要退出后台管理系统吗？</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" id="out">退出</button>
+                </div>
             </div>
-            <div class="modal-body">
-                <p><i class="glyphicon glyphicon-info-sign"></i>您确定要退出后台管理系统吗？</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-              <button type="button" class="btn btn-primary" id="out">退出</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
     <script src="./lib/jquery/jquery-1.12.4.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
@@ -91,7 +104,9 @@
     <script src="./lib/nprogress/nprogress.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/islogin.js"></script>
+    <script src="./lib/echarts/echarts.common.min.js"></script>
     <script src="./js/login.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

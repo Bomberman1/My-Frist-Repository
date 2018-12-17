@@ -61,6 +61,8 @@ $(function () {
           var imgstr = data.result.picAddr;
           
           $('#yulanimg').attr('src',imgstr)
+
+
         }
   });
   //表单校验功能

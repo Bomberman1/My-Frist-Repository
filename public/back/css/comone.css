@@ -29,6 +29,13 @@ body {
   list-style: none;
   height: 100%;
 }
+.table > tbody > tr > td {
+  text-align: center;
+  vertical-align: middle;
+}
+.table-bordered > thead > tr > th {
+  text-align: center;
+}
 header {
   height: 50px;
   width: 100%;

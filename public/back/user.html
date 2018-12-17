@@ -62,13 +62,31 @@
     <div class="main">
         <ol class="breadcrumb">
             <li>
-                <a href="#">管理系统</a>
+                <a href="index.html">管理系统</a>
             </li>
-            <li class="active">首页</li>
+            <li class="active">用户管理</li>
         </ol>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <!-- 序号	用户名	手机号	状态	操作 -->
+                    <th>序号</th>
+                    <th>用户名</th>
+                    <th>手机号</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id='tbody'>
+                <!-- 挖个坑 -->
+            </tbody>
+        </table>
+        <!-- 分页html结构 -->
+        <div class = 'pagintor-box pull-right'>
+            <ul id="pagintor"></ul>
+        </div>
     </div>
-    <!-- 遮盖层 -->
-    <!-- Button trigger modal -->
+
 
 
     <!-- Modal -->
@@ -92,14 +110,33 @@
             </div>
         </div>
     </div>
+    <!-- template模板 -->
+    <script type="text/html" id="template">
+        {{each rows v i}}
+        <tr>
+            <td>{{ i+1+(page-1)*size }}</td>
+            <td>{{v.username}}</td>
+            <td>{{v.mobile}}</td>
+            <td>{{v.isDelete == 1 ? '禁用' : '启用'}}</td>
+            {{ if v.isDelete == 1 }}
+            <td><button class="btn btn-danger">禁用</button></td>
+            {{else}}
+            <td><button class="btn btn-success">启用</button></td>
+            {{/if}}
+        </tr>
+        {{/each}}
+    </script>
 
     <script src="./lib/jquery/jquery-1.12.4.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="./lib/bootstrap-validator/js/bootstrapValidator.js"></script>
+    <script src="./lib/bootstrap-paginator/bootstrap-paginator.min.js"></script>
     <script src="./lib/nprogress/nprogress.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/islogin.js"></script>
-    <script src="./js/login.js"></script>
+    <script src="./lib/template/template-web.js"></script>
+    <script src="./js/user.js"></script>
+
 </body>
 
 </html>

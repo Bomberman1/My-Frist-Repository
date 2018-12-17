@@ -30,4 +30,26 @@ $(function () {
             }
         })
     }
+    //注册事件委托
+    $('.table').on('click','tbody .btn',function () {
+        // console.log($(this).parents('tr').data('id'))
+        var id = $(this).parents('tr').data('id')
+        console.log($(this).text())
+        var isDelete = $(this).text()== '禁用' ? 0 : 1
+        $.ajax({
+            url : '/user/updateUser',
+            type : 'post',
+            data : {
+                id : id,
+                isDelete : isDelete
+            },
+            dataType : 'json',
+            success : function (res) {
+                console.log(res);
+                if(res.success){
+                    rander()
+                }
+            }
+        })
+    })
 })

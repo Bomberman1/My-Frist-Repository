@@ -113,7 +113,7 @@
     <!-- template模板 -->
     <script type="text/html" id="template">
         {{each rows v i}}
-        <tr>
+        <tr data-id = {{v.id}}>
             <td>{{ i+1+(page-1)*size }}</td>
             <td>{{v.username}}</td>
             <td>{{v.mobile}}</td>

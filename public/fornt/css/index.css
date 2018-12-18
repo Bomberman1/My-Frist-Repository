@@ -1,0 +1,96 @@
+/* 作者：王贵 */
+.letao_container {
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: pink;
+  padding-bottom: 55px;
+  padding-top: 45px;
+  position: relative;
+}
+header {
+  height: 45px;
+  width: 100%;
+  padding-left: 45px;
+  padding-right: 45px;
+  position: absolute;
+  top: 0;
+  background-color: #006699;
+}
+header .left {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .left a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+}
+header .right {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+header .right a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+}
+header h3 {
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+}
+.footer {
+  height: 55px;
+  width: 100%;
+  background-color: #006699;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer ul {
+  width: 100%;
+  height: 55px;
+}
+.footer ul li {
+  width: 25%;
+  height: 55px;
+  float: left;
+}
+.footer ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 5px;
+  color: #fff;
+}
+.footer ul li a p {
+  color: #fff;
+  margin: 0;
+}
+.footer ul li.now a {
+  color: orange;
+}
+.footer ul li.now a p {
+  color: #ffa500;
+}
+.main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}

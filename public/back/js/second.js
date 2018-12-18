@@ -104,7 +104,7 @@ $(function () {
         e.preventDefault();
         $.ajax({
             url : '/category/addSecondCategory',
-            data : $('#from').serialize(),
+            data : $('#form').serialize(),
             dataType : 'json',
             type : 'post',
             success : function (res) {
@@ -116,7 +116,7 @@ $(function () {
                     validator.resetForm('#form')
                     //手动清空文件
                     $('#dropdownMenu1 span:nth-child(1)').text('请选择一级分类')
-                    $('#yulanimg').attr('src','../images/none.png')
+                    $('#yulanimg').attr('src','')
                 }
             }
         })

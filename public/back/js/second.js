@@ -97,7 +97,7 @@ $(function () {
                 }
             },
         }
-        
+  
     })
     //表单校验成功事件
     $("#form").on('success.form.bv', function (e) {

@@ -131,18 +131,20 @@
                             <ul class="dropdown-menu" style="top: 50px; left: 15px;" id="selectorul">
                                 <!-- 挖个坑 -->
                             </ul>
+                            <input type="hidden" name="categoryId">
                         </div>
                         <div class="form-group">
-                            <input type="text" name='erjifenlei' class="form-control" placeholder="请输入二级分类">
+                            <input type="text" name='brandName' class="form-control" placeholder="请输入二级分类">
                         </div>
                         <div class="form-group">
                             <label for="fileimg" class="btn btn-default">上传图片</label>
                             <input type="file" id="fileimg" name="pic1" data-url="/category/addSecondCategoryPic" style="display: none">
                         </div>
                         <img src="./images/none.png" alt="" style="width: 100px;height: 100px;" id="yulanimg">
+                        <input type="hidden" name="brandLogo">
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                            <button type="submit" class="btn btn-primary" id="out">退出</button>
+                            <button type="submit" class="btn btn-primary" id="out">添加</button>
                         </div>
                     </form>
                 </div>
@@ -162,7 +164,7 @@
     </script>
     <script type='text/html' id='template1'>
         {{each rows v i}}
-        <li><a tabindex="-1" href="#">{{v.categoryName}}</a></li>
+        <li data-id = {{v.id}}><a tabindex="-1" href="#">{{v.categoryName}}</a></li>
         {{/each}}
     </script>
     <script src="./lib/jquery/jquery-1.12.4.min.js"></script>

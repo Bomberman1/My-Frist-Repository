@@ -1,0 +1,48 @@
+.main{
+    padding: 0;
+}
+.category_left{
+    width: 90px;
+    height: 100%;
+    float: left;
+    // background-color: pink;
+    position: relative;
+    li>a{
+        display : block;
+        width: 90px;
+        height: 50px;
+        text-align: center;
+        color: #666;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        line-height: 50px;
+        &.now{
+            background-color: #fff;
+            border-right: none;
+        }
+    }
+}
+.category_right{
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+    li{
+        float: left;
+        width: 33.3%;
+        a{
+            display: block;
+            width: 100%;
+            text-align: center;
+            img{
+                width: 70px;
+                height: 50px; 
+            }
+            p{
+                width: 100%;
+                line-height: 20px;
+                text-align: center
+            }
+        }
+    }
+}

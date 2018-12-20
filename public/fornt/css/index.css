@@ -1,96 +1,56 @@
 /* 作者：王贵 */
-.letao_container {
-  width: 100%;
-  height: 100%;
-  max-width: 640px;
-  min-width: 320px;
-  margin: 0 auto;
-  background-color: pink;
-  padding-bottom: 55px;
-  padding-top: 45px;
-  position: relative;
-}
-header {
-  height: 45px;
-  width: 100%;
-  padding-left: 45px;
-  padding-right: 45px;
-  position: absolute;
-  top: 0;
-  background-color: #006699;
-}
-header .left {
-  width: 45px;
-  height: 45px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-header .left a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  line-height: 45px;
-  color: #fff;
-}
-header .right {
-  width: 45px;
-  height: 45px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-header .right a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  line-height: 45px;
-  color: #fff;
-}
-header h3 {
-  text-align: center;
-  height: 45px;
-  line-height: 45px;
-}
-.footer {
-  height: 55px;
-  width: 100%;
-  background-color: #006699;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.footer ul {
-  width: 100%;
-  height: 55px;
-}
-.footer ul li {
-  width: 25%;
-  height: 55px;
-  float: left;
-}
-.footer ul li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  padding-top: 5px;
-  color: #fff;
-}
-.footer ul li a p {
-  color: #fff;
-  margin: 0;
-}
-.footer ul li.now a {
-  color: orange;
-}
-.footer ul li.now a p {
-  color: #ffa500;
-}
 .main {
-  position: relative;
-  height: 100%;
+  background-color: #fff;
+}
+.main nav ul {
+  overflow: hidden;
+  padding: 10px;
+}
+.main nav ul li {
+  float: left;
+  width: 33.3%;
+}
+.main nav ul li a {
+  display: block;
   width: 100%;
+}
+.main nav ul li a img {
+  width: 100%;
+}
+.main .product ul {
+  overflow: hidden;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+.main .product ul li:nth-child(odd) {
+  width: 48%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  float: left;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.main .product ul li:nth-child(odd) a {
+  display: block;
+  width: 100%;
+}
+.main .product ul li:nth-child(odd) a img {
+  width: 130px;
+  height: 130px;
+}
+.main .product ul li:nth-child(even) {
+  width: 48%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  float: right;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.main .product ul li:nth-child(even) a {
+  display: block;
+  width: 100%;
+}
+.main .product ul li:nth-child(even) a img {
+  width: 130px;
+  height: 130px;
 }

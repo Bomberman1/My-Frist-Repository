@@ -1,0 +1,47 @@
+.main {
+  padding: 0;
+}
+.category_left {
+  width: 90px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.category_left li > a {
+  display: block;
+  width: 90px;
+  height: 50px;
+  text-align: center;
+  color: #666;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  line-height: 50px;
+}
+.category_left li > a.now {
+  background-color: #fff;
+  border-right: none;
+}
+.category_right {
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+}
+.category_right li {
+  float: left;
+  width: 33.3%;
+}
+.category_right li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.category_right li a img {
+  width: 70px;
+  height: 50px;
+}
+.category_right li a p {
+  width: 100%;
+  line-height: 20px;
+  text-align: center;
+}

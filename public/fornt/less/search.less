@@ -1,0 +1,53 @@
+.main {
+    background-color: #fff;
+}
+.search_ipt{
+    padding: 10px;
+    position: relative;
+    input{
+        height: 34px;
+        border-radius: 5px;
+        border: 1px solid #007AFF;
+        margin : 0;
+    }
+    button{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border-radius: 0 5px 5px 0;
+    }
+}
+.history{
+    padding: 10px;
+    padding-bottom: 0;
+    .htop{
+        height: 30px;
+        span{
+            line-height: 30px;
+            color: #666
+        }
+    }
+    .hbottom{
+        overflow: hidden;
+        li{
+            height: 30px;
+            border-left: 1px dashed red;
+            border-bottom: 1px dashed red;
+            border-right: 1px dashed red;
+            line-height: 30px;
+            span{
+                float: left;
+            }
+            i{
+                float: right;
+            }
+        }
+        li:nth-child(1){
+            border-top: 1px dashed red;
+        }
+
+    }
+}
+.history .hbottom li span{
+    float: none;
+}

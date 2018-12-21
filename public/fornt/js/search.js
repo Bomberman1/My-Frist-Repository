@@ -66,5 +66,7 @@ $(function () {
         var jsonstr = JSON.stringify(arr)
         localStorage.setItem('search_List', jsonstr)
         rander()
+        console.log(str);
+        location.href = 'searchList.html?reset='+str
     })
 })
